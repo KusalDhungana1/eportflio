@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Full Stack Development ePortfolio — comprehensive reference for HTML, CSS, Bootstrap, and JavaScript with live interactive demos.">
+    <title>Full Stack Development ePortfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="code.css">
+</head>
+
+<body>
+
+    <div id="progress-bar"></div>
+
+    <!-- ═══════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════ -->
+    <nav class="navbar navbar-expand-lg fixed-top ice-nav" id="mainNav">
+        <div class="container" style="max-width:1140px;">
+            <a class="navbar-brand" href="#">
+                <span class="brand-icon">&lt;/&gt;</span>
+                <span class="brand-text">kusal<span class="brand-dot">.</span>portfolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto gap-1 align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#fullstack"><i
+                                class="fas fa-layer-group me-1"></i>Fullstack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#html"><i class="fab fa-html5 me-1"></i>HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#css"><i class="fab fa-css3-alt me-1"></i>CSS</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#bootstrap"><i
+                                class="fab fa-bootstrap me-1"></i>Bootstrap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#javascript"><i
+                                class="fab fa-js me-1"></i>JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════
+     MAIN
+════════════════════════════════════════════════ -->
+    <main class="container" style="max-width:1140px; padding-top:120px; padding-bottom:100px;">
+
+        <!-- HERO -->
+        <header class="text-center light-hero">
+            <div class="hero-badge"><span class="badge-dot"></span>INTERACTIVE REFERENCE</div>
+            <h1 class="display-4 fw-extrabold mt-4">Full Stack Development<br><span
+                    class="text-gradient-blue">ePortfolio</span></h1>
+            <p class="hero-subtitle mt-4 mx-auto">A comprehensive demonstration of modern web architecture, semantic
+                structuring, styling paradigms, and dynamic behavior.</p>
+            <div class="hero-stats mt-5">
+                <div class="stat-chip"><i class="fas fa-code me-2"></i>5 Modules</div>
+                <div class="stat-chip"><i class="fas fa-flask me-2"></i>10+ Live Demos</div>
+                <div class="stat-chip"><i class="fas fa-graduation-cap me-2"></i>Deep Definitions</div>
+            </div>
+        </header>
+
+        <!-- ══════════════════════════════════════════
+         SECTION 01 · FULL STACK
+    ═══════════════════════════════════════════ -->
+        <section id="fullstack" class="module-section pt-5">
+            <div class="section-header mb-4">
+                <span class="section-badge">01</span>
+                <div>
+                    <h2 class="fw-bold mb-0">Full Stack Development</h2>
+                    <p class="section-sub mb-0">Architecture, APIs, Auth &amp; Workflows</p>
+                </div>
+            </div>
+            <div class="ice-card">
+                <div class="card-body p-5">
+
+                    <!-- Definition Overview -->
+                    <div class="def-block mb-5">
+                        <p class="premium-text">
+                            <strong>Full Stack Development</strong> is the practice of working across all layers of a
+                            web application — from the pixels a user sees to the database rows that store their data. A
+                            full-stack developer understands how the <strong>Frontend</strong> (client-side UI built
+                            with HTML, CSS, JavaScript), the <strong>Backend</strong> (server-side logic using Node.js,
+                            Python, PHP, etc.), and the <strong>Database</strong> (SQL or NoSQL storage) interconnect to
+                            deliver a seamless product.
+                        </p>
+                        <p class="premium-text mt-3">
+                            The three layers are often called the <strong>Three-Tier Architecture</strong>: the
+                            <em>Presentation Tier</em> renders the UI; the <em>Logic Tier</em> processes business rules;
+                            and the <em>Data Tier</em> persists and retrieves information. Each tier communicates over
+                            standardised protocols, most commonly <strong>HTTP/HTTPS</strong> using
+                            <strong>REST</strong> or <strong>GraphQL</strong> APIs.
+                        </p>
+                    </div>
+
+                    <div class="premium-tabs mb-4">
+                        <button class="premium-tab active-tab">Architecture &amp; API</button>
+                        <button class="premium-tab">Auth &amp; Workflows</button>
+                        <button class="premium-tab">API Simulator</button>
+                    </div>
+
+                    <!-- TAB 1 – Architecture & API -->
+                    <div class="tab-content-active">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="concept-card">
+                                    <h6><i class="fas fa-project-diagram me-2"></i>Three-Tier System Architecture</h6>
+                                    <p class="premium-text mb-3">Every request travels through the full stack: the
+                                        browser sends an HTTP request → the server validates and processes it → queries
+                                        the database → sends JSON back → the browser re-renders the UI.</p>
+                                    <div class="code-surface p-3">
+                                        <pre class="mono-text mb-0" style="margin:0; white-space:pre-wrap;">
+<span style="color:#38bdf8;">[ Client / Browser ]</span>   — HTML · CSS · JS — renders the UI
+        │ HTTP Request (GET /api/users)
+        ▼
+<span style="color:#a78bfa;">[ Server / Node.js + Express ]</span>   — routes, middleware, controllers
+        │ SQL / NoSQL Query
+        ▼
+<span style="color:#34d399;">[ Database / PostgreSQL / MongoDB ]</span>   — stores &amp; retrieves data
+        │ Result Set / Documents
+        ▲
+<span style="color:#a78bfa;">[ Server ]</span>   — serialises to JSON, applies CORS headers
+        │ HTTP Response 200 OK + JSON body
+        ▲
+<span style="color:#38bdf8;">[ Client ]</span>   — parses JSON, updates DOM</pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-exchange-alt me-2"></i>REST API &amp; CRUD Operations</h6>
+                                    <p class="premium-text mb-3"><strong>REST</strong> (Representational State Transfer)
+                                        maps HTTP verbs to database operations. Each endpoint represents a
+                                        <em>resource</em> (e.g., <code>/users</code>) and responds with structured JSON.
+                                    </p>
+                                    <div class="crud-grid">
+                                        <div class="crud-item crud-post"><span class="verb">POST</span><span
+                                                class="desc">Create — adds a new record</span></div>
+                                        <div class="crud-item crud-get"><span class="verb">GET</span><span
+                                                class="desc">Read — retrieves records</span></div>
+                                        <div class="crud-item crud-put"><span class="verb">PUT</span><span
+                                                class="desc">Update — replaces a record</span></div>
+                                        <div class="crud-item crud-patch"><span class="verb">PATCH</span><span
+                                                class="desc">Partial update of a record</span></div>
+                                        <div class="crud-item crud-delete"><span class="verb">DELETE</span><span
+                                                class="desc">Remove a record</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-database me-2"></i>Common Tech Stacks</h6>
+                                    <p class="premium-text mb-3">A "stack" is a curated combination of technologies.
+                                        Choosing the right stack depends on project requirements, team expertise, and
+                                        scalability needs.</p>
+                                    <div class="stack-list">
+                                        <div class="stack-item"><span class="stack-name">MERN</span><span
+                                                class="stack-tech">MongoDB · Express · React · Node.js</span></div>
+                                        <div class="stack-item"><span class="stack-name">LAMP</span><span
+                                                class="stack-tech">Linux · Apache · MySQL · PHP</span></div>
+                                        <div class="stack-item"><span class="stack-name">Django</span><span
+                                                class="stack-tech">Python · Django · PostgreSQL · React</span></div>
+                                        <div class="stack-item"><span class="stack-name">JAM</span><span
+                                                class="stack-tech">JavaScript · APIs · Markup (static)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2 – Auth & Workflows -->
+                    <div class="tab-content-hidden">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="concept-card">
+                                    <h6><i class="fas fa-shield-alt me-2"></i>Authentication &amp; Authorisation</h6>
+                                    <p class="premium-text mb-2"><strong>Authentication</strong> answers "Who are you?"
+                                        — verifying identity. <strong>Authorisation</strong> answers "What can you do?"
+                                        — enforcing permissions. These are distinct concerns that must never be
+                                        conflated.</p>
+                                    <p class="premium-text mb-3">The industry standard is <strong>JWT (JSON Web
+                                            Token)</strong>: a signed, URL-safe token containing a <em>header</em>,
+                                        <em>payload</em> (claims), and <em>signature</em>. The server issues the JWT on
+                                        login; subsequent requests include it in the
+                                        <code>Authorization: Bearer &lt;token&gt;</code> header. The server validates
+                                        the signature without touching the database, enabling <strong>stateless</strong>
+                                        authentication.
+                                    </p>
+                                    <div class="code-surface p-3">
+                                        <pre class="mono-text mb-0" style="margin:0; white-space:pre-wrap;"><span style="color:#38bdf8;">// 1. Login — server returns JWT</span>
+POST /api/auth/login  →  { "token": "eyJhbGci..." }
+
+<span style="color:#38bdf8;">// 2. Protected request — client sends JWT</span>
+GET /api/profile
+Authorization: Bearer eyJhbGci...
+
+<span style="color:#38bdf8;">// 3. Server verifies signature, extracts userId</span>
+<span style="color:#a78bfa;">jwt.verify</span>(token, SECRET_KEY) → { userId: 42, role: "admin" }</pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fab fa-git-alt me-2"></i>Git Feature-Branch Workflow</h6>
+                                    <p class="premium-text mb-3">Professional teams never commit directly to
+                                        <code>main</code>. Each feature or bug fix lives in an isolated branch, goes
+                                        through code review via a Pull Request, passes CI/CD checks, then merges.
+                                    </p>
+                                    <div class="code-surface p-3">
+                                        <pre class="mono-text mb-0" style="margin:0;"><span style="color:#4a6580;"># Create feature branch</span>
+git checkout -b feature/login
+
+<span style="color:#4a6580;"># Stage &amp; commit with semantic message</span>
+git add .
+git commit -m "feat: add JWT login route"
+
+<span style="color:#4a6580;"># Push &amp; open Pull Request</span>
+git push origin feature/login
+<span style="color:#34d399;">// PR → Code Review → CI ✓ → Merge → Deploy</span></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-rocket me-2"></i>CI/CD Pipeline</h6>
+                                    <p class="premium-text mb-3"><strong>Continuous Integration</strong> automatically
+                                        runs tests on every push. <strong>Continuous Deployment</strong> ships passing
+                                        builds straight to production. This eliminates manual deployments and catches
+                                        bugs early.</p>
+                                    <div class="pipeline-steps">
+                                        <div class="pipe-step"><span class="pipe-num">1</span><span>Code Push</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right pipe-arrow"></i>
+                                        <div class="pipe-step"><span class="pipe-num">2</span><span>Tests Run</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right pipe-arrow"></i>
+                                        <div class="pipe-step"><span class="pipe-num">3</span><span>Build</span></div>
+                                        <i class="fas fa-arrow-right pipe-arrow"></i>
+                                        <div class="pipe-step pipe-step-green"><span
+                                                class="pipe-num">4</span><span>Deploy</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3 – API Simulator -->
+                    <div class="tab-content-hidden">
+                        <p class="premium-text mb-4">This simulator demonstrates the <strong>request-response
+                                cycle</strong> between a frontend client and a backend REST API. Select an endpoint and
+                            method, then fire the request to see the full HTTP flow — status code, headers, and JSON
+                            payload — rendered in real time.</p>
+                        <div class="api-simulator">
+                            <div class="api-controls mb-3 d-flex gap-3 flex-wrap">
+                                <select id="apiMethod" class="form-select api-select" style="max-width:110px;">
+                                    <option value="GET">GET</option>
+                                    <option value="POST">POST</option>
+                                    <option value="PUT">PUT</option>
+                                    <option value="DELETE">DELETE</option>
+                                </select>
+                                <select id="apiEndpoint" class="form-select api-select flex-fill">
+                                    <option value="users">/api/users</option>
+                                    <option value="user1">/api/users/1</option>
+                                    <option value="posts">/api/posts</option>
+                                    <option value="auth">/api/auth/login</option>
+                                </select>
+                                <button id="apiBtn" class="btn ice-btn"><i class="fas fa-paper-plane me-2"></i>Send
+                                    Request</button>
+                            </div>
+                            <div class="terminal-box p-4" style="min-height:220px;">
+                                <div class="term-bar mb-3"><span class="term-dot red"></span><span
+                                        class="term-dot yellow"></span><span class="term-dot green"></span><span
+                                        class="term-label ms-2">HTTP Client</span></div>
+                                <div id="apiStatus" class="mono-text" style="color:var(--text-muted);">Awaiting request…
+                                    select an endpoint and click Send.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+         SECTION 02 · HTML
+    ═══════════════════════════════════════════ -->
+        <section id="html" class="module-section pt-5">
+            <div class="section-header mb-4">
+                <span class="section-badge">02</span>
+                <div>
+                    <h2 class="fw-bold mb-0">HTML</h2>
+                    <p class="section-sub mb-0">HyperText Markup Language — Structure &amp; Semantics</p>
+                </div>
+            </div>
+            <div class="ice-card">
+                <div class="card-body p-5">
+
+                    <div class="def-block mb-5">
+                        <p class="premium-text">
+                            <strong>HTML (HyperText Markup Language)</strong> is the foundational language of the web.
+                            It defines the <em>structure</em> and <em>meaning</em> of content using a system of nested
+                            <strong>elements</strong> — opening tags, content, and closing tags — that browsers parse
+                            into a tree called the <strong>DOM (Document Object Model)</strong>. CSS then styles the
+                            DOM; JavaScript manipulates it.
+                        </p>
+                        <p class="premium-text mt-3">
+                            Modern HTML5 introduced <strong>semantic elements</strong> (<code>&lt;header&gt;</code>,
+                            <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>,
+                            <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code>) that
+                            carry <em>meaning</em> rather than purely visual structure. This benefits
+                            <strong>SEO</strong> (search engines understand page hierarchy),
+                            <strong>accessibility</strong> (screen readers navigate landmarks), and
+                            <strong>maintainability</strong> (code is self-documenting).
+                        </p>
+                    </div>
+
+                    <div class="premium-tabs mb-4">
+                        <button class="premium-tab active-tab">Semantics &amp; a11y</button>
+                        <button class="premium-tab">Performance</button>
+                        <button class="premium-tab">DOM Explorer</button>
+                    </div>
+
+                    <!-- Semantic & a11y -->
+                    <div class="tab-content-active">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-sitemap me-2"></i>Semantic Document Structure</h6>
+                                    <p class="premium-text mb-3">A well-structured HTML document uses semantic elements
+                                        to create meaningful landmarks. This allows search engine crawlers and assistive
+                                        technologies to understand the layout without relying on visual cues.</p>
+                                    <div class="code-surface p-3">
+                                        <pre class="mono-text mb-0" style="margin:0; color:#94d8ff;">&lt;<span style="color:#38bdf8;">html</span> lang="en"&gt;
+  &lt;<span style="color:#38bdf8;">head</span>&gt; ... &lt;/head&gt;
+  &lt;<span style="color:#38bdf8;">body</span>&gt;
+    &lt;<span style="color:#a78bfa;">header</span>&gt; Logo + Nav &lt;/header&gt;
+    &lt;<span style="color:#a78bfa;">main</span>&gt;
+      &lt;<span style="color:#a78bfa;">article</span>&gt;
+        &lt;<span style="color:#a78bfa;">section</span>&gt; Content &lt;/section&gt;
+      &lt;/article&gt;
+      &lt;<span style="color:#a78bfa;">aside</span>&gt; Sidebar &lt;/aside&gt;
+    &lt;/main&gt;
+    &lt;<span style="color:#a78bfa;">footer</span>&gt; Copyright &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-universal-access me-2"></i>Accessibility (a11y)</h6>
+                                    <p class="premium-text mb-2"><strong>Accessibility</strong> ensures content is
+                                        usable by people with visual, motor, or cognitive disabilities. Web Content
+                                        Accessibility Guidelines (WCAG 2.1) define three conformance levels: A, AA, and
+                                        AAA.</p>
+                                    <p class="premium-text mb-3">Key practices:</p>
+                                    <ul class="a11y-list">
+                                        <li><code>alt</code> attributes on all images — describe the image for screen
+                                            readers</li>
+                                        <li><code>aria-label</code> / <code>aria-describedby</code> for context-free
+                                            icons</li>
+                                        <li><code>aria-expanded</code>, <code>aria-hidden</code> to communicate dynamic
+                                            state</li>
+                                        <li>Every <code>&lt;input&gt;</code> paired with a
+                                            <code>&lt;label for="..."&gt;</code>
+                                        </li>
+                                        <li>Logical heading hierarchy: only one <code>&lt;h1&gt;</code>, then
+                                            <code>&lt;h2&gt;</code>…
+                                        </li>
+                                        <li>Keyboard focus order matches visual layout</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="concept-card">
+                                    <h6><i class="fas fa-tags me-2"></i>Semantic Elements — Quick Reference</h6>
+                                    <div class="sem-grid">
+                                        <div class="sem-item"><code>&lt;article&gt;</code><span>Self-contained,
+                                                independently distributable content (blog post, news item)</span></div>
+                                        <div class="sem-item"><code>&lt;section&gt;</code><span>Thematic grouping of
+                                                content, typically with a heading</span></div>
+                                        <div class="sem-item"><code>&lt;aside&gt;</code><span>Content tangentially
+                                                related to the surrounding content (sidebar)</span></div>
+                                        <div class="sem-item"><code>&lt;figure&gt;</code><span>Self-contained media with
+                                                optional <code>&lt;figcaption&gt;</code></span></div>
+                                        <div class="sem-item"><code>&lt;time&gt;</code><span>Machine-readable date/time
+                                                via <code>datetime</code> attribute</span></div>
+                                        <div class="sem-item"><code>&lt;mark&gt;</code><span>Highlighted or
+                                                search-result text</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2 – Performance -->
+                    <div class="tab-content-hidden">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-bolt me-2"></i>Render-Blocking Resources</h6>
+                                    <p class="premium-text mb-3">The browser cannot render the page until it has
+                                        downloaded and parsed all <strong>render-blocking</strong> CSS and JavaScript.
+                                        Misplaced <code>&lt;script&gt;</code> tags freeze the HTML parser, causing a
+                                        blank screen. Two attributes solve this:</p>
+                                    <ul class="a11y-list mb-3">
+                                        <li><code>defer</code> — downloads in parallel, executes after DOM is fully
+                                            parsed</li>
+                                        <li><code>async</code> — downloads in parallel, executes immediately when ready
+                                            (order not guaranteed)</li>
+                                    </ul>
+                                    <div class="code-surface p-3">
+                                        <pre class="mono-text mb-0" style="margin:0;"><span style="color:#4a6580;">/* ✓ Non-blocking — preferred */</span>
+&lt;script src="app.js" <span style="color:#34d399;">defer</span>&gt;&lt;/script&gt;
+
+<span style="color:#4a6580;">/* ✓ Lazy-load off-screen images */</span>
+&lt;img src="hero.jpg" <span style="color:#34d399;">loading="lazy"</span> alt="..."&gt;
+
+<span style="color:#4a6580;">/* ✓ Preconnect to external origins */</span>
+&lt;link rel="<span style="color:#34d399;">preconnect</span>" href="https://fonts.googleapis.com"&gt;</pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-tachometer-alt me-2"></i>Core Web Vitals</h6>
+                                    <p class="premium-text mb-3">Google's <strong>Core Web Vitals</strong> are the
+                                        metrics that directly affect search ranking and user experience:</p>
+                                    <div class="cwv-list">
+                                        <div class="cwv-item">
+                                            <span class="cwv-label" style="color:#34d399;">LCP</span>
+                                            <div><strong style="color:var(--text-primary);">Largest Contentful
+                                                    Paint</strong><br><small>Time until the biggest element is visible.
+                                                    Target: &lt; 2.5s</small></div>
+                                        </div>
+                                        <div class="cwv-item">
+                                            <span class="cwv-label" style="color:#fbbf24;">FID</span>
+                                            <div><strong style="color:var(--text-primary);">First Input
+                                                    Delay</strong><br><small>Time until the page responds to first
+                                                    interaction. Target: &lt; 100ms</small></div>
+                                        </div>
+                                        <div class="cwv-item">
+                                            <span class="cwv-label" style="color:#a78bfa;">CLS</span>
+                                            <div><strong style="color:var(--text-primary);">Cumulative Layout
+                                                    Shift</strong><br><small>Measures unexpected layout jumps. Target:
+                                                    &lt; 0.1</small></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3 – DOM Explorer -->
+                    <div class="tab-content-hidden">
+                        <p class="premium-text mb-4">Use this live DOM explorer to understand how the browser parses
+                            semantic HTML. Select a tag to see its rendered output, ARIA role, and use-case description.
+                        </p>
+                        <div class="row g-4 align-items-start">
+                            <div class="col-md-4">
+                                <label class="form-label">Select Semantic Tag</label>
+                                <select id="htmlSelect" class="form-select mb-3">
+                                    <option value="article">&lt;article&gt;</option>
+                                    <option value="section">&lt;section&gt;</option>
+                                    <option value="aside">&lt;aside&gt;</option>
+                                    <option value="figure">&lt;figure&gt;</option>
+                                    <option value="nav">&lt;nav&gt;</option>
+                                    <option value="header">&lt;header&gt;</option>
+                                </select>
+                                <div id="htmlMeta" class="concept-card">
+                                    <div class="d-flex gap-2 mb-2">
+                                        <span class="meta-pill" id="htmlRole">role: article</span>
+                                    </div>
+                                    <p class="premium-text mb-0" id="htmlDesc" style="font-size:0.875rem;">A
+                                        self-contained composition that could be independently distributed or reused.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <label class="form-label">Rendered HTML Output</label>
+                                <div id="htmlOut" class="code-surface p-4 mono-text"
+                                    style="min-height:160px; white-space:pre; overflow-x:auto;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+         SECTION 03 · CSS
+    ═══════════════════════════════════════════ -->
+        <section id="css" class="module-section pt-5">
+            <div class="section-header mb-4">
+                <span class="section-badge">03</span>
+                <div>
+                    <h2 class="fw-bold mb-0">CSS</h2>
+                    <p class="section-sub mb-0">Cascading Style Sheets — Layout, Styling &amp; Animation</p>
+                </div>
+            </div>
+            <div class="ice-card">
+                <div class="card-body p-5">
+
+                    <div class="def-block mb-5">
+                        <p class="premium-text">
+                            <strong>CSS (Cascading Style Sheets)</strong> controls the visual presentation of HTML. The
+                            word <em>cascading</em> refers to the <strong>specificity algorithm</strong> that determines
+                            which rule wins when multiple declarations target the same element. Rules cascade from the
+                            browser's defaults → author stylesheets → inline styles, with <code>!important</code> at the
+                            top of the chain.
+                        </p>
+                        <p class="premium-text mt-3">
+                            CSS is governed by the <strong>Box Model</strong>: every element is a rectangular box
+                            composed of <em>content → padding → border → margin</em>. Understanding this model — and
+                            setting <code>box-sizing: border-box</code> globally — is foundational to predictable
+                            layouts. Modern CSS provides two primary layout systems: <strong>Flexbox</strong>
+                            (one-dimensional) and <strong>CSS Grid</strong> (two-dimensional).
+                        </p>
+                    </div>
+
+                    <div class="premium-tabs mb-4">
+                        <button class="premium-tab active-tab">Cascade &amp; Specificity</button>
+                        <button class="premium-tab">Layout Systems</button>
+                        <button class="premium-tab">Box Model Lab</button>
+                    </div>
+
+                    <!-- Cascade Specificity -->
+                    <div class="tab-content-active">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-layer-group me-2"></i>Specificity Hierarchy</h6>
+                                    <p class="premium-text mb-3">When two rules conflict, the browser applies the one
+                                        with higher <strong>specificity</strong>. Specificity is calculated as a
+                                        four-part score <code>(inline, IDs, classes, elements)</code>.</p>
+                                    <div class="spec-list">
+                                        <div class="spec-item"><span class="spec-score"
+                                                style="color:#f87171;">1000</span><code>style="..."</code><span>Inline
+                                                styles</span></div>
+                                        <div class="spec-item"><span class="spec-score"
+                                                style="color:#fbbf24;">0100</span><code>#id</code><span>ID
+                                                selector</span></div>
+                                        <div class="spec-item"><span class="spec-score"
+                                                style="color:#38bdf8;">0010</span><code>.class</code><span>Class /
+                                                pseudo-class / attribute</span></div>
+                                        <div class="spec-item"><span class="spec-score"
+                                                style="color:#94a3b8;">0001</span><code>element</code><span>Type &amp;
+                                                pseudo-element</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-microchip me-2"></i>Rendering Pipeline &amp; Performance</h6>
+                                    <p class="premium-text mb-3">To achieve smooth <strong>60fps</strong> animations,
+                                        avoid properties that trigger <em>Layout</em> recalculation (reflow). Only
+                                        <code>transform</code> and <code>opacity</code> are composited on the GPU —
+                                        bypassing Layout and Paint entirely.
+                                    </p>
+                                    <div class="code-surface p-3">
+                                        <pre class="mono-text mb-0" style="margin:0;">Parse HTML → DOM
+Parse CSS  → CSSOM
+           ↓
+      Render Tree
+           ↓
+<span style="color:#fbbf24;">    Layout (Reflow)</span>    ← avoid triggering
+           ↓
+<span style="color:#a78bfa;">      Paint</span>           ← avoid triggering
+           ↓
+<span style="color:#34d399;">    Composite</span>         ← transform/opacity only</pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="concept-card">
+                                    <h6><i class="fas fa-mobile-alt me-2"></i>Responsive Design — Mobile-First
+                                        Methodology</h6>
+                                    <p class="premium-text mb-3"><strong>Mobile-First</strong> means writing base styles
+                                        for small screens first, then progressively enhancing with
+                                        <code>min-width</code> media queries. This produces leaner CSS and ensures core
+                                        content is always accessible.
+                                    </p>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="code-surface p-3">
+                                                <pre class="mono-text mb-0" style="margin:0;"><span style="color:#4a6580;">/* Base — mobile (≤ 576px) */</span>
+.card { width: 100%; }
+
+<span style="color:#4a6580;">/* Tablet (≥ 768px) */</span>
+@media (min-width: 768px) {
+  .card { width: 50%; }
+}
+
+<span style="color:#4a6580;">/* Desktop (≥ 1200px) */</span>
+@media (min-width: 1200px) {
+  .card { width: 33.33%; }
+}</pre>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="breakpoint-viz">
+                                                <div class="bp-bar" style="width:100%; color:#f87171;"><i
+                                                        class="fas fa-mobile-alt me-2"></i>Mobile &lt;576px</div>
+                                                <div class="bp-bar" style="width:82%; color:#fbbf24;"><i
+                                                        class="fas fa-tablet-alt me-2"></i>Tablet ≥576px</div>
+                                                <div class="bp-bar" style="width:65%; color:#38bdf8;"><i
+                                                        class="fas fa-laptop me-2"></i>Desktop ≥768px</div>
+                                                <div class="bp-bar" style="width:50%; color:#34d399;"><i
+                                                        class="fas fa-desktop me-2"></i>Wide ≥1200px</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2 – Layout Systems -->
+                    <div class="tab-content-hidden">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-arrows-alt-h me-2"></i>Flexbox — One-Dimensional Layout</h6>
+                                    <p class="premium-text mb-3"><strong>Flexbox</strong> distributes space along a
+                                        single axis (row or column). The <em>flex container</em> controls alignment;
+                                        <em>flex items</em> can grow, shrink, and wrap. Essential properties:
+                                    </p>
+                                    <div class="code-surface p-3">
+                                        <pre class="mono-text mb-0" style="margin:0;">.container {
+  display: <span style="color:#38bdf8;">flex</span>;
+  flex-direction: row;        <span style="color:#4a6580;">/* axis */</span>
+  justify-content: space-between; <span style="color:#4a6580;">/* main axis */</span>
+  align-items: center;        <span style="color:#4a6580;">/* cross axis */</span>
+  flex-wrap: wrap;            <span style="color:#4a6580;">/* allow wrapping */</span>
+}
+.item { flex: 1 1 200px; }   <span style="color:#4a6580;">/* grow shrink basis */</span></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-th me-2"></i>CSS Grid — Two-Dimensional Layout</h6>
+                                    <p class="premium-text mb-3"><strong>CSS Grid</strong> is the first native 2D layout
+                                        system. It defines explicit rows and columns, enabling complex page layouts
+                                        without hacks. Items can span multiple cells.</p>
+                                    <div class="code-surface p-3">
+                                        <pre class="mono-text mb-0" style="margin:0;">.grid {
+  display: <span style="color:#a78bfa;">grid</span>;
+  grid-template-columns:
+    repeat(3, 1fr);           <span style="color:#4a6580;">/* 3 equal columns */</span>
+  grid-template-rows:
+    auto 1fr auto;
+  gap: 16px;
+}
+.header { grid-column: 1 / -1; } <span style="color:#4a6580;">/* full width */</span></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="concept-card">
+                                    <h6><i class="fas fa-magic me-2"></i>CSS Variables &amp; Custom Properties</h6>
+                                    <p class="premium-text mb-3">CSS Custom Properties (variables) store reusable values
+                                        — colours, spacing, typography — in the <code>:root</code> scope. They cascade
+                                        like regular properties and can be overridden in component scopes, enabling
+                                        theming without JavaScript.</p>
+                                    <div class="code-surface p-3">
+                                        <pre class="mono-text mb-0" style="margin:0;"><span style="color:#4a6580;">/* Define tokens at root */</span>
+:root {
+  --color-brand: <span style="color:#38bdf8;">#38bdf8</span>;
+  --space-md: 16px;
+  --radius: 12px;
+}
+
+<span style="color:#4a6580;">/* Consume anywhere */</span>
+.button {
+  background: var(--color-brand);
+  padding: var(--space-md);
+  border-radius: var(--radius);
+}</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3 – Box Model Lab -->
+                    <div class="tab-content-hidden">
+                        <p class="premium-text mb-4">Drag the sliders to interactively adjust the CSS <strong>Box
+                                Model</strong>. Watch the box and generated CSS update in real time. The four layers —
+                            <em>content → padding → border → margin</em> — are visualised with distinct colours.
+                        </p>
+                        <div class="box-model-wrapper mb-4">
+                            <div class="bm-layer margin-layer">
+                                <span class="bm-label">margin: <span id="lblMar">0</span>px</span>
+                                <div class="bm-layer border-layer">
+                                    <span class="bm-label">border: <span id="lblBor">0</span>px</span>
+                                    <div class="bm-layer padding-layer">
+                                        <span class="bm-label">padding: <span id="lblPad">0</span>px</span>
+                                        <div id="cssBox" class="bm-content">CONTENT</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 mb-4">
+                            <div class="col-4">
+                                <label class="form-label">PADDING <span class="slider-val" id="vPad">0</span>px</label>
+                                <input type="range" class="form-range" id="rPad" min="0" max="40" value="0">
+                            </div>
+                            <div class="col-4">
+                                <label class="form-label">BORDER <span class="slider-val" id="vBor">0</span>px</label>
+                                <input type="range" class="form-range" id="rBor" min="0" max="20" value="0">
+                            </div>
+                            <div class="col-4">
+                                <label class="form-label">MARGIN <span class="slider-val" id="vMar">0</span>px</label>
+                                <input type="range" class="form-range" id="rMar" min="0" max="50" value="0">
+                            </div>
+                        </div>
+                        <pre id="cssOut" class="premium-code-block"
+                            style="font-size:12px;">/* adjust sliders above */</pre>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+         SECTION 04 · BOOTSTRAP
+    ═══════════════════════════════════════════ -->
+        <section id="bootstrap" class="module-section pt-5">
+            <div class="section-header mb-4">
+                <span class="section-badge">04</span>
+                <div>
+                    <h2 class="fw-bold mb-0">Bootstrap</h2>
+                    <p class="section-sub mb-0">CSS Framework — Grid, Components &amp; Utilities</p>
+                </div>
+            </div>
+            <div class="ice-card">
+                <div class="card-body p-5">
+
+                    <div class="def-block mb-5">
+                        <p class="premium-text">
+                            <strong>Bootstrap 5</strong> is the world's most popular open-source CSS framework. It
+                            provides a <strong>mobile-first</strong> grid system, a comprehensive library of pre-styled
+                            UI components (buttons, modals, alerts, navbars), and a utility API inspired by atomic CSS —
+                            all with minimal JavaScript dependencies. Bootstrap accelerates development by abstracting
+                            low-level CSS into semantic class names.
+                        </p>
+                        <p class="premium-text mt-3">
+                            At its core, Bootstrap's layout is built on <strong>CSS Flexbox</strong> organised into a
+                            12-column grid with six responsive breakpoints. The <strong>Utility API</strong> (v5+)
+                            allows custom utilities to be generated from SCSS configuration, meaning teams can ship only
+                            what they use — reducing payload by up to 80% compared to importing the full bundle via CDN.
+                        </p>
+                    </div>
+
+                    <div class="premium-tabs mb-4">
+                        <button class="premium-tab active-tab">Grid System</button>
+                        <button class="premium-tab">Components</button>
+                        <button class="premium-tab">Breakpoint API</button>
+                    </div>
+
+                    <!-- TAB 1 – Grid -->
+                    <div class="tab-content-active">
+                        <div class="row g-4">
+                            <div class="col-md-7">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-th me-2"></i>12-Column Responsive Grid</h6>
+                                    <p class="premium-text mb-3">Bootstrap's grid works by nesting <code>.col-*</code>
+                                        classes inside <code>.row</code> inside <code>.container</code>. Columns always
+                                        add up to 12 per row. Responsive modifiers (<code>-sm-</code>,
+                                        <code>-md-</code>, <code>-lg-</code>) override the column width at specific
+                                        breakpoints.
+                                    </p>
+                                    <div class="code-surface p-3 mb-3">
+                                        <pre class="mono-text mb-0" style="margin:0;">&lt;div class="<span style="color:#38bdf8;">container</span>"&gt;
+  &lt;div class="<span style="color:#a78bfa;">row</span>"&gt;
+    &lt;div class="<span style="color:#34d399;">col-12 col-md-8 col-lg-6</span>"&gt;
+      <span style="color:#4a6580;">/* 12 cols mobile, 8 tablet, 6 desktop */</span>
+    &lt;/div&gt;
+    &lt;div class="<span style="color:#34d399;">col-12 col-md-4 col-lg-6</span>"&gt;
+      <span style="color:#4a6580;">/* remaining columns */</span>
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+                                    </div>
+                                    <p class="premium-text mb-0">Auto columns with <code>.col</code> divide available
+                                        space equally. Use <code>offset-md-2</code> to push columns right. Nest rows
+                                        inside columns for complex layouts.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-ruler-combined me-2"></i>Breakpoint Reference</h6>
+                                    <p class="premium-text mb-3">Bootstrap 5 defines six breakpoints based on minimum
+                                        viewport widths:</p>
+                                    <div class="bp-table">
+                                        <div class="bp-row header-row">
+                                            <span>Prefix</span><span>Breakpoint</span><span>Min-Width</span>
+                                        </div>
+                                        <div class="bp-row"><span><code>col-</code></span><span>xs
+                                                (default)</span><span>&lt; 576px</span></div>
+                                        <div class="bp-row"><span><code>col-sm-</code></span><span>Small</span><span>≥
+                                                576px</span></div>
+                                        <div class="bp-row"><span><code>col-md-</code></span><span>Medium</span><span>≥
+                                                768px</span></div>
+                                        <div class="bp-row"><span><code>col-lg-</code></span><span>Large</span><span>≥
+                                                992px</span></div>
+                                        <div class="bp-row"><span><code>col-xl-</code></span><span>X-Large</span><span>≥
+                                                1200px</span></div>
+                                        <div class="bp-row">
+                                            <span><code>col-xxl-</code></span><span>XX-Large</span><span>≥ 1400px</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2 – Components -->
+                    <div class="tab-content-hidden">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-puzzle-piece me-2"></i>Pre-built Components</h6>
+                                    <p class="premium-text mb-3">Bootstrap ships with 20+ ready-to-use components. Each
+                                        is responsive, keyboard-accessible, and theme-able via SCSS variables.</p>
+                                    <div class="comp-grid">
+                                        <span class="comp-chip"><i class="fas fa-bars me-1"></i>Navbar</span>
+                                        <span class="comp-chip"><i class="fas fa-window-restore me-1"></i>Modal</span>
+                                        <span class="comp-chip"><i class="fas fa-bell me-1"></i>Alert</span>
+                                        <span class="comp-chip"><i class="fas fa-spinner me-1"></i>Spinner</span>
+                                        <span class="comp-chip"><i class="fas fa-cards-blank me-1"></i>Card</span>
+                                        <span class="comp-chip"><i class="fas fa-sliders-h me-1"></i>Carousel</span>
+                                        <span class="comp-chip"><i class="fas fa-chevron-down me-1"></i>Accordion</span>
+                                        <span class="comp-chip"><i class="fas fa-tags me-1"></i>Badge</span>
+                                        <span class="comp-chip"><i class="fas fa-chart-bar me-1"></i>Progress</span>
+                                        <span class="comp-chip"><i class="fas fa-list me-1"></i>List Group</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-palette me-2"></i>Utility Classes &amp; API</h6>
+                                    <p class="premium-text mb-3">Bootstrap's utility classes follow a naming convention:
+                                        <code>property-breakpoint-value</code>. The Utility API lets you generate custom
+                                        utilities in SCSS without writing raw CSS.
+                                    </p>
+                                    <div class="code-surface p-3">
+                                        <pre class="mono-text mb-0" style="margin:0;"><span style="color:#4a6580;">/* Spacing utilities */</span>
+.mt-3   → margin-top: 1rem
+.p-4    → padding: 1.5rem
+.gap-2  → gap: 0.5rem
+
+<span style="color:#4a6580;">/* Display utilities */</span>
+.d-none        → display: none
+.d-md-flex     → display: flex (≥768px)
+
+<span style="color:#4a6580;">/* Flex utilities */</span>
+.justify-content-between
+.align-items-center
+.flex-wrap</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3 – Breakpoint API -->
+                    <div class="tab-content-hidden">
+                        <p class="premium-text mb-4">Resize your browser window and watch Bootstrap's responsive grid
+                            system detect and highlight the active breakpoint in real time. This is how Bootstrap's
+                            classes switch layouts across device sizes.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-4">
+                            <span class="bp-badge" id="bp-xs">XS</span>
+                            <span class="bp-badge" id="bp-sm">SM</span>
+                            <span class="bp-badge" id="bp-md">MD</span>
+                            <span class="bp-badge" id="bp-lg">LG</span>
+                            <span class="bp-badge" id="bp-xl">XL</span>
+                            <span class="bp-badge" id="bp-xxl">XXL</span>
+                        </div>
+                        <div class="terminal-box p-4 text-center" style="padding-top:40px !important;">
+                            <div class="row g-3 justify-content-center">
+                                <div class="col-auto">
+                                    <div style="color:var(--text-muted); font-size:0.85rem;">Active Breakpoint</div>
+                                    <div id="bpActive" class="fw-bold"
+                                        style="font-size:2rem; color:var(--brand); font-family:'JetBrains Mono',monospace;">
+                                        col-*</div>
+                                </div>
+                                <div class="col-auto">
+                                    <div style="color:var(--text-muted); font-size:0.85rem;">Viewport Width</div>
+                                    <div id="bpWidth" class="fw-bold"
+                                        style="font-size:2rem; color:var(--accent-violet); font-family:'JetBrains Mono',monospace;">
+                                        —</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+         SECTION 05 · JAVASCRIPT
+    ═══════════════════════════════════════════ -->
+        <section id="javascript" class="module-section pt-5">
+            <div class="section-header mb-4">
+                <span class="section-badge">05</span>
+                <div>
+                    <h2 class="fw-bold mb-0">JavaScript</h2>
+                    <p class="section-sub mb-0">Dynamic Behaviour, DOM Manipulation &amp; Async Programming</p>
+                </div>
+            </div>
+            <div class="ice-card">
+                <div class="card-body p-5">
+
+                    <div class="def-block mb-5">
+                        <p class="premium-text">
+                            <strong>JavaScript (JS)</strong> is the only programming language natively executed by web
+                            browsers. It transforms static HTML/CSS pages into <em>interactive applications</em> by
+                            manipulating the DOM, handling user events, and communicating with servers asynchronously.
+                            Every modern browser ships a <strong>JavaScript Engine</strong> (V8 in Chrome/Node.js,
+                            SpiderMonkey in Firefox) that compiles JS to optimised machine code via Just-In-Time (JIT)
+                            compilation.
+                        </p>
+                        <p class="premium-text mt-3">
+                            JS is <strong>single-threaded</strong> — it has one call stack and can only execute one task
+                            at a time. Long-running operations (network requests, file I/O) are handled by the browser's
+                            <strong>Web APIs</strong>, which run on separate threads. When complete, their callbacks
+                            enter the <strong>Task Queue</strong> (macro-tasks) or <strong>Microtask Queue</strong>
+                            (Promises). The <strong>Event Loop</strong> continuously checks whether the call stack is
+                            empty and pushes the next queued task to run.
+                        </p>
+                    </div>
+
+                    <div class="premium-tabs mb-4">
+                        <button class="premium-tab active-tab">Event Loop &amp; Async</button>
+                        <button class="premium-tab">DOM &amp; Error Handling</button>
+                        <button class="premium-tab">Execution Console</button>
+                    </div>
+
+                    <!-- TAB 1 -->
+                    <div class="tab-content-active">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-sync-alt me-2"></i>The Event Loop</h6>
+                                    <p class="premium-text mb-3">The Event Loop is the mechanism that lets JavaScript
+                                        perform non-blocking I/O despite being single-threaded. It processes the Call
+                                        Stack first, then drains all Microtasks (Promises), then takes one Macro-task
+                                        (setTimeout, fetch callback) and repeats.</p>
+                                    <div class="code-surface p-3">
+                                        <pre class="mono-text mb-0" style="margin:0; white-space:pre-wrap;"><span style="color:#4a6580;">// Execution order demonstration</span>
+console.log(<span style="color:#34d399;">"1 — synchronous"</span>);
+
+setTimeout(() =&gt; {
+  console.log(<span style="color:#fbbf24;">"3 — macro-task"</span>);
+}, 0);
+
+Promise.resolve().then(() =&gt; {
+  console.log(<span style="color:#a78bfa;">"2 — microtask"</span>);
+});
+
+<span style="color:#4a6580;">// Output: 1, 2, 3</span></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-clock me-2"></i>Async/Await &amp; Promises</h6>
+                                    <p class="premium-text mb-2"><strong>Promises</strong> represent the eventual result
+                                        of an async operation — either <em>fulfilled</em> or <em>rejected</em>.
+                                        <strong>async/await</strong> is syntactic sugar over Promises that makes async
+                                        code read like synchronous code.
+                                    </p>
+                                    <p class="premium-text mb-3">Always wrap <code>await</code> calls in
+                                        <code>try/catch</code> to handle network errors, timeout issues, and API errors
+                                        gracefully without crashing the application.
+                                    </p>
+                                    <div class="code-surface p-3">
+                                        <pre class="mono-text mb-0" style="margin:0; white-space:pre-wrap;"><span style="color:#38bdf8;">async function</span> <span style="color:#a78bfa;">fetchUser</span>(id) {
+  <span style="color:#38bdf8;">try</span> {
+    <span style="color:#38bdf8;">const</span> res = <span style="color:#38bdf8;">await</span> fetch(<span style="color:#34d399;">`/api/users/${id}`</span>);
+    <span style="color:#38bdf8;">if</span> (!res.ok) <span style="color:#38bdf8;">throw new</span> Error(res.status);
+    <span style="color:#38bdf8;">return await</span> res.json();
+  } <span style="color:#38bdf8;">catch</span> (err) {
+    console.error(<span style="color:#f87171;">"Fetch failed:"</span>, err);
+  }
+}</pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="concept-card">
+                                    <h6><i class="fas fa-cubes me-2"></i>ES6+ Modern JavaScript Features</h6>
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <div class="es6-item">
+                                                <span class="es6-tag">Destructuring</span>
+                                                <code>const { name, age } = user;</code>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="es6-item">
+                                                <span class="es6-tag">Spread / Rest</span>
+                                                <code>const merged = { ...a, ...b };</code>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="es6-item">
+                                                <span class="es6-tag">Optional Chain</span>
+                                                <code>user?.address?.city</code>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="es6-item">
+                                                <span class="es6-tag">Template Literal</span>
+                                                <code>`Hello, ${name}!`</code>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="es6-item">
+                                                <span class="es6-tag">Arrow Function</span>
+                                                <code>const add = (a, b) => a + b;</code>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="es6-item">
+                                                <span class="es6-tag">Nullish Coalescing</span>
+                                                <code>value ?? "default"</code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2 – DOM & Error Handling -->
+                    <div class="tab-content-hidden">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-tree me-2"></i>DOM Manipulation</h6>
+                                    <p class="premium-text mb-3">The <strong>Document Object Model</strong> is a
+                                        tree-like, in-memory representation of the HTML page. JavaScript can query,
+                                        create, modify, and delete any node. Modern code prefers
+                                        <code>querySelector</code> over the older <code>getElementById</code>.
+                                    </p>
+                                    <div class="code-surface p-3">
+                                        <pre class="mono-text mb-0" style="margin:0;"><span style="color:#4a6580;">// Select elements</span>
+<span style="color:#38bdf8;">const</span> el = document.<span style="color:#a78bfa;">querySelector</span>(<span style="color:#34d399;">".card"</span>);
+
+<span style="color:#4a6580;">// Read / write content</span>
+el.textContent = <span style="color:#34d399;">"Hello!"</span>;
+el.classList.<span style="color:#a78bfa;">toggle</span>(<span style="color:#34d399;">"active"</span>);
+el.setAttribute(<span style="color:#34d399;">"aria-hidden"</span>, <span style="color:#34d399;">"true"</span>);
+
+<span style="color:#4a6580;">// Create &amp; append</span>
+<span style="color:#38bdf8;">const</span> p = document.<span style="color:#a78bfa;">createElement</span>(<span style="color:#34d399;">"p"</span>);
+p.textContent = <span style="color:#34d399;">"New paragraph"</span>;
+el.<span style="color:#a78bfa;">append</span>(p);</pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="concept-card h-100">
+                                    <h6><i class="fas fa-exclamation-triangle me-2"></i>Error Handling &amp; Resilience
+                                    </h6>
+                                    <p class="premium-text mb-2">Robust applications handle errors gracefully. The
+                                        three-part strategy:</p>
+                                    <ol class="a11y-list">
+                                        <li><strong>Prevent:</strong> validate input before sending</li>
+                                        <li><strong>Catch:</strong> wrap async operations in <code>try/catch</code></li>
+                                        <li><strong>Recover:</strong> show meaningful UI feedback (not raw error
+                                            objects)</li>
+                                    </ol>
+                                    <div class="code-surface p-3 mt-3">
+                                        <pre class="mono-text mb-0" style="margin:0;"><span style="color:#38bdf8;">async function</span> <span style="color:#a78bfa;">loadData</span>() {
+  <span style="color:#38bdf8;">try</span> {
+    showSpinner();
+    <span style="color:#38bdf8;">const</span> data = <span style="color:#38bdf8;">await</span> fetchUsers();
+    renderList(data);
+  } <span style="color:#38bdf8;">catch</span> (err) {
+    <span style="color:#38bdf8;">if</span> (err.status === 404) showEmptyState();
+    <span style="color:#38bdf8;">else</span> showErrorToast(err.message);
+  } <span style="color:#38bdf8;">finally</span> {
+    hideSpinner();
+  }
+}</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3 – Execution Console -->
+                    <div class="tab-content-hidden">
+                        <p class="premium-text mb-4">A fully simulated JavaScript <strong>execution console</strong>.
+                            Type code in the editor and click <em>Run</em>, or use the preset snippets to see Promise
+                            resolution, async/await flow, and error handling in action.</p>
+                        <div class="row g-3 mb-3">
+                            <div class="col-12">
+                                <div class="d-flex gap-2 flex-wrap mb-3">
+                                    <button class="btn snippet-btn" data-snippet="promise">Promise Chain</button>
+                                    <button class="btn snippet-btn" data-snippet="async">Async/Await</button>
+                                    <button class="btn snippet-btn" data-snippet="dom">DOM Query</button>
+                                    <button class="btn snippet-btn" data-snippet="error">Error Handling</button>
+                                    <button class="btn snippet-btn" data-snippet="array">Array Methods</button>
+                                </div>
+                                <div class="code-editor-wrapper mb-3">
+                                    <textarea id="jsEditor" class="code-editor" rows="7" spellcheck="false">// Type JavaScript here and click Run
+console.log("Hello from the JS Console!");
+console.log("Current time:", new Date().toLocaleTimeString());</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 mb-4">
+                            <button id="jsRun" class="btn ice-btn"><i class="fas fa-play me-2"></i>Run Code</button>
+                            <button id="jsPass" class="btn js-btn-resolve"><i
+                                    class="fas fa-check-circle me-2"></i>Resolve Promise</button>
+                            <button id="jsFail" class="btn js-btn-reject"><i class="fas fa-times-circle me-2"></i>Reject
+                                Promise</button>
+                            <button id="jsClear" class="btn js-btn-clear ms-auto"><i
+                                    class="fas fa-trash me-2"></i>Clear</button>
+                        </div>
+                        <div id="jsLoad" class="text-center mb-3 d-none">
+                            <div class="spinner-border spinner-border-sm"></div>
+                            <span class="ms-2 mono-text" style="color:var(--text-muted);">fetching...</span>
+                        </div>
+                        <div id="jsTerm" class="terminal-box p-4"
+                            style="min-height:180px; max-height:260px; overflow-y:auto; padding-top:42px !important;">
+                            <div class="mono-text" style="color:var(--text-muted);">// console ready</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer text-center">
+        <div class="footer-brand">kusal<span style="color:var(--brand);">.</span>portfolio</div>
+        <div class="footer-tagline">Full Stack Development ePortfolio</div>
+        <hr class="footer-divider">
+        <div class="footer-links mb-3">
+            <a href="#fullstack">Fullstack</a>
+            <a href="#html">HTML</a>
+            <a href="#css">CSS</a>
+            <a href="#bootstrap">Bootstrap</a>
+            <a href="#javascript">JavaScript</a>
+        </div>
+        <div class="footer-copy mono-text">Built with HTML · CSS · Bootstrap · JavaScript</div>
+        <div class="footer-copy mono-text mt-2">Developed by Kusal Dhungana</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        /* ════════════════════════════════════════
+           PROGRESS BAR
+        ════════════════════════════════════════ */
+        const pb = document.getElementById('progress-bar');
+        window.addEventListener('scroll', () => {
+            const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+            pb.style.width = Math.min(pct, 100) + '%';
+        });
+
+        /* ════════════════════════════════════════
+           NAV SCROLL
+        ════════════════════════════════════════ */
+        const mainNav = document.querySelector('.ice-nav');
+        window.addEventListener('scroll', () => {
+            mainNav.classList.toggle('scrolled', window.scrollY > 30);
+        });
+
+        /* ════════════════════════════════════════
+           SCROLL SPY
+        ════════════════════════════════════════ */
+        const allSections = document.querySelectorAll('section[id]');
+        const allNavLinks = document.querySelectorAll('.nav-link');
+        const spyObs = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    allNavLinks.forEach(l => l.classList.remove('active'));
+                    const a = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+                    if (a) a.classList.add('active');
+                }
+            });
+        }, { threshold: 0.35 });
+        allSections.forEach(s => spyObs.observe(s));
+
+        /* ════════════════════════════════════════
+           SCROLL REVEAL
+        ════════════════════════════════════════ */
+        const revealObs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-visible'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.module-section').forEach(s => revealObs.observe(s));
+
+        /* ════════════════════════════════════════
+           TAB SWITCHING
+        ════════════════════════════════════════ */
+        document.querySelectorAll('.ice-card').forEach(card => {
+            const tabs = card.querySelectorAll('.premium-tab');
+            const contents = card.querySelectorAll('[class^="tab-content-"]');
+            tabs.forEach((tab, i) => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active-tab'));
+                    tab.classList.add('active-tab');
+                    contents.forEach((c, j) => {
+                        c.className = i === j ? 'tab-content-active' : 'tab-content-hidden';
+                    });
+                });
+            });
+        });
+
+        /* ════════════════════════════════════════
+           API SIMULATOR
+        ════════════════════════════════════════ */
+        const apiResponses = {
+            GET: {
+                users: { status: 200, body: { users: [{ id: 1, name: "Alice" }, { id: 2, name: "Bob" }], total: 2 } },
+                user1: { status: 200, body: { id: 1, name: "Alice", email: "alice@example.com", role: "admin" } },
+                posts: { status: 200, body: { posts: [{ id: 1, title: "Hello World", authorId: 1 }] } },
+                auth: { status: 405, body: { error: "Method Not Allowed — use POST for /auth/login" } }
+            },
+            POST: {
+                users: { status: 201, body: { id: 3, name: "Charlie", message: "User created successfully" } },
+                user1: { status: 405, body: { error: "Method Not Allowed" } },
+                posts: { status: 201, body: { id: 2, title: "New Post", message: "Post created" } },
+                auth: { status: 200, body: { token: "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjF9.abc123", expiresIn: "1h" } }
+            },
+            PUT: {
+                users: { status: 405, body: { error: "Specify user ID: PUT /api/users/1" } },
+                user1: { status: 200, body: { id: 1, name: "Alice Updated", message: "User replaced" } },
+                posts: { status: 405, body: { error: "Specify post ID" } },
+                auth: { status: 405, body: { error: "Method Not Allowed" } }
+            },
+            DELETE: {
+                users: { status: 405, body: { error: "Specify user ID: DELETE /api/users/1" } },
+                user1: { status: 204, body: null },
+                posts: { status: 405, body: { error: "Specify post ID" } },
+                auth: { status: 405, body: { error: "Method Not Allowed" } }
+            }
+        };
+
+        const endpointPaths = { users: '/api/users', user1: '/api/users/1', posts: '/api/posts', auth: '/api/auth/login' };
+
+        document.getElementById('apiBtn').addEventListener('click', async function () {
+            const method = document.getElementById('apiMethod').value;
+            const ep = document.getElementById('apiEndpoint').value;
+            const path = endpointPaths[ep];
+            const status = document.getElementById('apiStatus');
+            this.disabled = true;
+
+            status.innerHTML = `<span style="color:var(--text-muted);">→ Sending ${method} ${path}…</span>`;
+            await new Promise(r => setTimeout(r, 900));
+
+            const resp = apiResponses[method][ep];
+            const isOk = resp.status >= 200 && resp.status < 300;
+            const statusColor = isOk ? 'var(--accent-green)' : (resp.status >= 400 ? 'var(--accent-rose)' : 'var(--accent-amber)');
+
+            const bodyStr = resp.body ? JSON.stringify(resp.body, null, 2) : '(no body — 204 No Content)';
+            status.innerHTML = `
+<span style="color:var(--text-muted);">REQUEST</span>
+<span style="color:var(--brand);">${method}</span> ${path}
+Content-Type: application/json
+
+<span style="color:var(--text-muted);">RESPONSE</span>
+<span style="color:${statusColor};font-weight:700;">HTTP ${resp.status} ${httpStatus(resp.status)}</span>
+Content-Type: application/json; charset=utf-8
+
+<span style="color:#94d8ff;">${escHtml(bodyStr)}</span>`;
+            this.disabled = false;
+        });
+
+        function httpStatus(code) {
+            return { 200: 'OK', 201: 'Created', 204: 'No Content', 400: 'Bad Request', 401: 'Unauthorized', 405: 'Method Not Allowed', 404: 'Not Found', 500: 'Internal Server Error' }[code] || '';
+        }
+        function escHtml(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+        /* ════════════════════════════════════════
+           HTML DOM EXPLORER
+        ════════════════════════════════════════ */
+        const htmlData = {
+            article: {
+                role: 'role: article',
+                desc: 'A self-contained composition that could be independently distributed or reused — e.g., a blog post, forum post, or news article.',
+                code: `<article>\n  <h2>Post Title</h2>\n  <p>Self-contained content block.\n  Independently distributable.</p>\n  <footer>By Alice — June 10</footer>\n</article>`
+            },
+            section: {
+                role: 'role: region',
+                desc: 'A thematic grouping of content, typically with a heading. Use when content forms a logical unit but isn\'t independently redistributable.',
+                code: `<section id="about">\n  <h2>About Us</h2>\n  <p>Thematic grouping with a heading.\n  Part of a larger document.</p>\n</section>`
+            },
+            aside: {
+                role: 'role: complementary',
+                desc: 'Content tangentially related to the surrounding content — sidebars, pull quotes, related links. Useful but not essential to the main content.',
+                code: `<aside>\n  <h3>Related Articles</h3>\n  <ul>\n    <li><a href="#">Topic A</a></li>\n    <li><a href="#">Topic B</a></li>\n  </ul>\n</aside>`
+            },
+            figure: {
+                role: 'role: figure',
+                desc: 'A self-contained media element — image, diagram, code snippet — optionally annotated with a <figcaption>.',
+                code: `<figure>\n  <img src="chart.png"\n       alt="Q3 revenue chart">\n  <figcaption>\n    Fig 1: Q3 2024 Revenue\n  </figcaption>\n</figure>`
+            },
+            nav: {
+                role: 'role: navigation',
+                desc: 'A landmark element wrapping major navigation links. Screen readers expose it as a navigation region; users can jump directly to it.',
+                code: `<nav aria-label="Main navigation">\n  <ul>\n    <li><a href="/">Home</a></li>\n    <li><a href="/about">About</a></li>\n    <li><a href="/contact">Contact</a></li>\n  </ul>\n</nav>`
+            },
+            header: {
+                role: 'role: banner (when top-level)',
+                desc: 'Introductory content or a group of navigational aids. When used as a direct child of <body>, it becomes the page\'s banner landmark.',
+                code: `<header>\n  <a class="logo" href="/">\n    MySite\n  </a>\n  <nav>...</nav>\n</header>`
+            }
+        };
+
+        const htmlSelect = document.getElementById('htmlSelect');
+        const htmlOut = document.getElementById('htmlOut');
+        const htmlRole = document.getElementById('htmlRole');
+        const htmlDesc = document.getElementById('htmlDesc');
+
+        function updateHtmlDemo(val) {
+            const d = htmlData[val];
+            htmlOut.textContent = d.code;
+            htmlRole.textContent = d.role;
+            htmlDesc.textContent = d.desc;
+        }
+        htmlSelect.addEventListener('change', e => updateHtmlDemo(e.target.value));
+        updateHtmlDemo('article');
+
+        /* ════════════════════════════════════════
+           CSS BOX MODEL
+        ════════════════════════════════════════ */
+        const cssBox = document.getElementById('cssBox');
+        const cssOut = document.getElementById('cssOut');
+        const marginLayer = document.querySelector('.margin-layer');
+        const borderLayer = document.querySelector('.border-layer');
+        const paddingLayer = document.querySelector('.padding-layer');
+
+        ['rPad', 'rBor', 'rMar'].forEach(id => {
+            document.getElementById(id).addEventListener('input', updateBoxModel);
+        });
+
+        function updateBoxModel() {
+            const p = +document.getElementById('rPad').value;
+            const b = +document.getElementById('rBor').value;
+            const m = +document.getElementById('rMar').value;
+
+            document.getElementById('vPad').textContent = p;
+            document.getElementById('vBor').textContent = b;
+            document.getElementById('vMar').textContent = m;
+            document.getElementById('lblPad').textContent = p;
+            document.getElementById('lblBor').textContent = b;
+            document.getElementById('lblMar').textContent = m;
+
+            paddingLayer.style.padding = p + 'px';
+            borderLayer.style.border = b + 'px solid #38bdf8';
+            marginLayer.style.padding = m + 'px';
+
+            cssOut.textContent = `.element {\n  /* Box Model */\n  box-sizing: border-box;\n\n  padding: ${p}px;\n  border: ${b}px solid #38bdf8;\n  margin: ${m}px;\n\n  /* Computed dimensions */\n  /* content + padding + border = total painted area */\n}`;
+        }
+
+        /* ════════════════════════════════════════
+           BREAKPOINT WATCHER
+        ════════════════════════════════════════ */
+        const bpNames = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
+        const bpWidths = [0, 576, 768, 992, 1200, 1400];
+        const bpPrefixes = ['col-', 'col-sm-', 'col-md-', 'col-lg-', 'col-xl-', 'col-xxl-'];
+
+        function updateBP() {
+            const w = window.innerWidth;
+            let idx = 0;
+            bpWidths.forEach((min, i) => { if (w >= min) idx = i; });
+            bpNames.forEach((bp, i) => {
+                document.getElementById('bp-' + bp).classList.toggle('active-bp', i === idx);
+            });
+            const el = document.getElementById('bpActive');
+            const wEl = document.getElementById('bpWidth');
+            if (el) el.textContent = bpPrefixes[idx] + '*';
+            if (wEl) wEl.textContent = w + 'px';
+        }
+        window.addEventListener('resize', updateBP);
+        updateBP();
+
+        /* ════════════════════════════════════════
+           JS CONSOLE
+        ════════════════════════════════════════ */
+        const jsTerm = document.getElementById('jsTerm');
+        const jsLoad = document.getElementById('jsLoad');
+        const jsEditor = document.getElementById('jsEditor');
+
+        const snippets = {
+            promise: `// Promise chain example
+const myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve({ data: 42 }), 500);
+});
+
+myPromise
+    .then(result => console.log("Resolved:", JSON.stringify(result)))
+    .catch(err   => console.error("Rejected:", err.message));`,
+            async: `// Async / Await with simulated fetch
+async function fetchUser(id) {
+    console.log(\`Fetching user \${id}...\`);
+    await delay(600); // simulate network
+    const user = { id, name: "Alice", role: "admin" };
+    console.log("Received:", JSON.stringify(user));
+    return user;
+}
+
+fetchUser(1);`,
+            dom: `// DOM Manipulation example
+const h1 = document.querySelector("h1");
+console.log("Page title:", h1?.textContent.trim());
+console.log("Total sections:", document.querySelectorAll("section").length);
+console.log("All links:", document.querySelectorAll("a").length);`,
+            error: `// Error handling with try/catch/finally
+async function riskyFetch(shouldFail) {
+    try {
+        if (shouldFail) throw new Error("Network timeout (408)");
+        await delay(400);
+        console.log("✓ Success: data loaded");
+    } catch (err) {
+        console.error("✗ Caught:", err.message);
+    } finally {
+        console.log("→ Cleanup complete (finally block)");
+    }
+}
+
+riskyFetch(false); // change to true to trigger error`,
+            array: `// ES6+ Array methods
+const scores = [88, 42, 95, 67, 78, 55, 91];
+
+const passing = scores.filter(s => s >= 70);
+const doubled = scores.map(s => s * 2);
+const total   = scores.reduce((sum, s) => sum + s, 0);
+const avg     = (total / scores.length).toFixed(1);
+
+console.log("All scores:", scores.join(", "));
+console.log("Passing (≥70):", passing.join(", "));
+console.log("Average:", avg);`
+        };
+
+        // Snippet buttons
+        document.querySelectorAll('.snippet-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                jsEditor.value = snippets[btn.dataset.snippet] || '';
+                document.querySelectorAll('.snippet-btn').forEach(b => b.classList.remove('active-snippet'));
+                btn.classList.add('active-snippet');
+            });
+        });
+
+        // Fake delay helper available in sandbox
+        function delay(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+        function termLog(msg, cls = 't-info', isHtml = false) {
+            const d = document.createElement('div');
+            d.className = 'mono-text ' + cls;
+            if (isHtml) d.innerHTML = msg; else d.textContent = msg;
+            jsTerm.appendChild(d);
+            jsTerm.scrollTop = jsTerm.scrollHeight;
+        }
+
+        // Override console for sandbox
+        const sandboxConsole = {
+            log: (...a) => termLog('> ' + a.map(x => typeof x === 'object' ? JSON.stringify(x) : x).join(' '), 't-info'),
+            error: (...a) => termLog('✗ ' + a.join(' '), 't-error'),
+            warn: (...a) => termLog('⚠ ' + a.join(' '), 't-warn')
+        };
+
+        document.getElementById('jsRun').addEventListener('click', () => {
+            termLog('— Running code —', 't-dim');
+            try {
+                const fn = new Function('console', 'delay', jsEditor.value);
+                fn(sandboxConsole, delay);
+            } catch (err) {
+                termLog('✗ SyntaxError: ' + err.message, 't-error');
+            }
+        });
+
+        document.getElementById('jsPass').addEventListener('click', async () => {
+            jsLoad.classList.remove('d-none');
+            termLog('> new Promise((resolve) => ...)', 't-info');
+            termLog('  ⏳ Promise pending...', 't-dim');
+            await delay(1000);
+            jsLoad.classList.add('d-none');
+            termLog('✓ Promise.resolve({ status: 200, data: "payload_received" })', 't-success');
+        });
+
+        document.getElementById('jsFail').addEventListener('click', async () => {
+            jsLoad.classList.remove('d-none');
+            termLog('> new Promise((_, reject) => ...)', 't-info');
+            termLog('  ⏳ Promise pending...', 't-dim');
+            await delay(1000);
+            jsLoad.classList.add('d-none');
+            termLog('✗ Promise.reject(new Error("NetworkError: 404 Not Found"))', 't-error');
+        });
+
+        document.getElementById('jsClear').addEventListener('click', () => {
+            jsTerm.innerHTML = '<div class="mono-text" style="color:var(--text-muted);">// console cleared</div>';
+        });
+    </script>
+</body>
+
+</html>
